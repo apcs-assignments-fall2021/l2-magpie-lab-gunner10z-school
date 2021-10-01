@@ -89,6 +89,14 @@ public class Magpie
         {
             response = transformYouMeStatement(statement);
         }
+        else if (findWord(statement,"I think that the vaccine is uesless.") >= 0)
+        {
+            response = "I don't think the vaccine is bad, in fact, there are several studies proving otherwise.";
+        }
+        else if (findWord(statement,"drink") >= 0)
+        {
+            response = "I love a good crisp latte from Starbucks.";
+        }
         else
         {
             response = getRandomResponse();
